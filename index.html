@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Constance Malacarne</title>
+    <title>Connie Malacarne</title>
 
     <style>
         body {
@@ -10,15 +10,39 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #fafafa;
             text-align: center;
         }
 
+        nav {
+            width: 100%;
+            background-color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            position: fixed;
+            top: 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #ff6fa3;
+        }
+
+        .content {
+            margin-top: 120px;
+            max-width: 700px;
+        }
+
         h1 {
-            color: pink;
+            color: #ff6fa3;
             font-size: 3em;
             margin-bottom: 10px;
         }
@@ -26,31 +50,39 @@
         p {
             font-size: 1.3em;
             color: #333;
-            max-width: 600px;
         }
 
-        /* Rounded pink box */
         .portfolio-box {
             margin-top: 25px;
-            padding: 20px 30px;
-            background-color: #ff6fa3; /* darker pink */
+            padding: 25px 35px;
+            background-color: #ff6fa3;
             color: white;
             font-size: 1.2em;
             border-radius: 20px;
-            max-width: 650px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Constance Malacarne</h1>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="projects.html">Projects</a>
+    <a href="experience.html">Experience</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-    <p>Hello esteemed peers, friends, and family, this is my website!</p>
+<div class="content">
+    <h1>Connie Malacarne</h1>
+
+    <p>Hello established peers, friends, and family, this is my website!</p>
 
     <div class="portfolio-box">
         This will soon be my electronic portfolio showcasing my work and education in Public Health.
     </div>
+</div>
 
 </body>
 </html>
