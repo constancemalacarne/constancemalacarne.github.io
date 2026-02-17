@@ -7,22 +7,16 @@
     <style>
         body {
             margin: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             font-family: "Segoe UI", Arial, sans-serif;
             background-color: #fafafa;
             text-align: center;
         }
 
+        /* Navigation bar */
         nav {
-            width: 100%;
             background-color: white;
-            padding: 15px 0;
+            padding: 15px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-            position: fixed;
-            top: 0;
         }
 
         nav a {
@@ -36,20 +30,28 @@
             color: #ff6fa3;
         }
 
-        .content {
-            margin-top: 120px;
-            max-width: 700px;
+        /* Hero section */
+        .hero {
+            padding: 80px 20px 60px 20px;
+            background-color: white;
         }
 
-        h1 {
+        .hero h1 {
             color: #ff6fa3;
-            font-size: 3em;
+            font-size: 3.2em;
             margin-bottom: 10px;
         }
 
-        p {
-            font-size: 1.3em;
-            color: #333;
+        .hero h2 {
+            font-weight: normal;
+            color: #555;
+        }
+
+        /* Content sections */
+        .section {
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 20px;
         }
 
         .portfolio-box {
@@ -74,9 +76,12 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-<div class="content">
+<div class="hero">
     <h1>Connie Malacarne</h1>
+    <h2>Public Health Student | Future MPH Candidate</h2>
+</div>
 
+<div class="section">
     <p>Hello established peers, friends, and family, this is my website!</p>
 
     <div class="portfolio-box">
