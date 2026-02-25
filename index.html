@@ -2,92 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Constance Malacarne</title>
+    <title>Sitemap Mockup – Constance Malacarne</title>
 
     <style>
         body {
-            margin: 0;
             font-family: "Segoe UI", Arial, sans-serif;
-            background-color: #fafafa;
+            background-color: #ffe4ec; /* light pink */
+            margin: 0;
+            padding: 40px;
             text-align: center;
         }
 
-        /* Navigation bar */
-        nav {
+        h1 {
+            color: #d63384; /* dark pink */
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .box {
             background-color: white;
+            border: 2px solid #d63384; /* dark pink border */
+            border-radius: 12px;
             padding: 15px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            margin: 15px auto;
+            width: 70%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
         }
 
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #444;
-            font-weight: 500;
+        .sub-box {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1.5px solid #d63384;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #fff5f8;
         }
 
-        nav a:hover {
-            color: #ff6fa3;
-        }
-
-        /* Hero section */
-        .hero {
-            padding: 80px 20px 60px 20px;
-            background-color: white;
-        }
-
-        .hero h1 {
-            color: #ff6fa3;
-            font-size: 3.2em;
-            margin-bottom: 10px;
-        }
-
-        .hero h2 {
-            font-weight: normal;
-            color: #555;
-        }
-
-        /* Content sections */
-        .section {
-            max-width: 750px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .portfolio-box {
-            margin-top: 25px;
-            padding: 25px 35px;
-            background-color: #ff6fa3;
-            color: white;
-            font-size: 1.2em;
-            border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        .line {
+            width: 2px;
+            height: 20px;
+            background-color: #d63384;
+            margin: 0 auto;
         }
     </style>
 </head>
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="education.html">Education</a>
-    <a href="projects.html">Projects</a>
-    <a href="experience.html">Experience</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <h1>E-Portfolio Sitemap</h1>
 
-<div class="hero">
-    <h1>Constance Malacarne</h1>
-    <h2>Public Health Student | Future MPH Candidate</h2>
-</div>
+    <div class="container">
 
-<div class="section">
-    <p>Hello established peers, friends, and family, this is my website!</p>
+        <!-- Home -->
+        <div class="box">
+            <strong>Home</strong><br>
+            Introduction + identity + navigation
+        </div>
 
-    <div class="portfolio-box">
-        This will soon be my electronic portfolio showcasing my work and education in Public Health.
+        <div class="line"></div>
+
+        <!-- About -->
+        <div class="box">
+            <strong>About</strong>
+            <div class="sub-box">Education</div>
+            <div class="sub-box">Professional Interests</div>
+            <div class="sub-box">Biography</div>
+            <div class="sub-box">Career Goals</div>
+        </div>
+
+        <!-- Projects -->
+        <div class="box">
+            <strong>Projects</strong>
+            <div class="sub-box">Program Plan</div>
+            <div class="sub-box">Evaluation Project</div>
+            <div class="sub-box">Research Paper</div>
+        </div>
+
+        <!-- Experience -->
+        <div class="box">
+            <strong>Experience</strong>
+            <div class="sub-box">Work Experience</div>
+            <div class="sub-box">Leadership</div>
+            <div class="sub-box">Volunteer Work</div>
+        </div>
+
+        <!-- Resume -->
+        <div class="box">
+            <strong>Resume / Skills</strong>
+            <div class="sub-box">Download PDF</div>
+            <div class="sub-box">Technical Skills</div>
+            <div class="sub-box">Methodological Skills</div>
+            <div class="sub-box">Professional Skills</div>
+        </div>
+
+        <!-- Contact -->
+        <div class="box">
+            <strong>Contact</strong>
+            <div class="sub-box">Email</div>
+            <div class="sub-box">LinkedIn</div>
+        </div>
+
     </div>
-</div>
 
 </body>
 </html>
