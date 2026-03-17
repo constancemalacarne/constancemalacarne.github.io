@@ -1,22 +1,61 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #ffe4ec;
+    text-align: center;
+}
+
 /* =========================
-   About Page Header Banner
+   Navigation (cute buttons)
+========================= */
+
+nav {
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #d63384;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #d63384;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: #d63384;
+    color: white;
+}
+
+/* Active page */
+nav a.active {
+    background-color: #d63384;
+    color: white;
+}
+
+/* =========================
+   Page Header
 ========================= */
 
 .page-header {
-    background-color: #d63384; /* darker pink */
+    background-color: #d63384;
     padding: 60px 20px;
-    text-align: center;
 }
 
 .page-header h1 {
     color: white;
     margin: 0;
     font-size: 2.8em;
-    letter-spacing: 1px;
 }
 
 /* =========================
-   Improve Section Layout
+   Content Section
 ========================= */
 
 .section {
@@ -29,14 +68,9 @@
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* Better paragraph spacing */
+/* Text styling */
 .section p {
     line-height: 1.7;
     color: #444;
     margin-bottom: 15px;
-}
-
-/* Optional: style bold labels nicer */
-.section strong {
-    color: #d63384;
 }
