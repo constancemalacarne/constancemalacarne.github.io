@@ -42,12 +42,12 @@ nav a.active {
 }
 
 /* =========================
-   PAGE HEADER (OPTIONAL)
+   PAGE HEADER
 ========================= */
 
 .page-header {
     background-color: #d63384;
-    padding: 70px 20px;
+    padding: 70px 20px 50px 20px; /* slightly less bottom padding */
     text-align: center;
 }
 
@@ -61,6 +61,32 @@ nav a.active {
     color: #ffe4ec;
     font-weight: normal;
     margin-top: 10px;
+}
+
+/* =========================
+   OVERVIEW BOX (FIXED)
+========================= */
+
+.overview-box {
+    max-width: 500px;
+    margin: 30px auto; /* FIXED (no negative margin) */
+    background-color: white;
+    padding: 20px 25px;
+    border-radius: 16px;
+    border: 3px solid #d63384;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.overview-box h3 {
+    margin: 0 0 10px 0;
+    color: #d63384;
+}
+
+.overview-box p {
+    margin: 0;
+    color: #444;
+    line-height: 1.5;
 }
 
 /* =========================
@@ -145,30 +171,4 @@ footer {
     padding: 20px;
     color: #d63384;
     font-size: 14px;
-}
-
-/* =========================
-   OVERVIEW BOX (HOME PAGE)
-========================= */
-
-.overview-box {
-    max-width: 500px;
-    margin: -40px auto 40px auto; /* pulls it slightly into header */
-    background-color: white;
-    padding: 20px 25px;
-    border-radius: 16px;
-    border: 3px solid #d63384;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.overview-box h3 {
-    margin: 0 0 10px 0;
-    color: #d63384;
-}
-
-.overview-box p {
-    margin: 0;
-    color: #444;
-    line-height: 1.5;
 }
