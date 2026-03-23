@@ -47,7 +47,7 @@ nav a.active {
 
 .page-header {
     background-color: #d63384;
-    padding: 70px 20px 50px 20px; /* slightly less bottom padding */
+    padding: 70px 20px;
     text-align: center;
 }
 
@@ -64,7 +64,7 @@ nav a.active {
 }
 
 /* =========================
-   OVERVIEW BOX (FIXED)
+   OVERVIEW LABEL (FIXED)
 ========================= */
 
 .overview-box {
@@ -83,6 +83,8 @@ nav a.active {
     color: #d63384;
     font-size: 18px;
     font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 /* =========================
