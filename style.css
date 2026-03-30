@@ -1,12 +1,12 @@
 /* =========================
-   FULL PAGE BACKGROUND
+   GLOBAL STYLES
 ========================= */
 
-html, body {
+body {
     margin: 0;
-    padding: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #ffd6e5;
+    background: linear-gradient(to bottom, #ffe4ec, #ffd6e5);
+    color: #333;
 }
 
 /* =========================
@@ -16,7 +16,7 @@ html, body {
 nav {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
     padding: 25px 0;
 }
 
@@ -27,146 +27,142 @@ nav a {
     font-weight: 500;
     background-color: white;
     border-radius: 25px;
-    border: 3px solid #d63384;
-    transition: all 0.2s ease;
+    border: 2px solid #f3b6c6;
+    transition: all 0.25s ease;
 }
 
 nav a:hover {
     background-color: #d63384;
     color: white;
+    border-color: #d63384;
 }
 
 nav a.active {
     background-color: #d63384;
     color: white;
+    border-color: #d63384;
 }
 
 /* =========================
-   PAGE HEADER
+   HERO SECTION
 ========================= */
 
-.page-header {
-    background-color: #d63384;
-    padding: 70px 20px;
+.hero {
     text-align: center;
+    padding: 60px 20px 40px 20px;
 }
 
-.page-header h1 {
-    color: white;
-    margin: 0;
-    font-size: 3em;
-}
-
-.page-header h2 {
-    color: #ffe4ec;
-    font-weight: normal;
-    margin-top: 10px;
-}
-
-/* =========================
-   OVERVIEW LABEL (FIXED)
-========================= */
-
-.overview-box {
-    width: fit-content;
-    margin: 20px auto 40px auto;
-    background-color: white;
-    padding: 10px 25px;
-    border-radius: 25px;
-    border: 3px solid #d63384;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.overview-box h3 {
-    margin: 0;
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
     color: #d63384;
+}
+
+.hero h2 {
     font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
-/* =========================
-   GENERAL SECTION CARD
-========================= */
-
-.section,
-.experience {
-    max-width: 850px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: white;
-    border: 4px solid #d63384;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-/* =========================
-   EXPERIENCE PAGE
-========================= */
-
-.experience h2 {
-    text-align: center;
-    color: #d63384;
-    margin-bottom: 30px;
-    font-size: 2em;
-}
-
-.experience-item {
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #f3b6c6;
-}
-
-.experience-item:last-child {
-    border-bottom: none;
-}
-
-.experience-item h3 {
-    margin: 0;
-    color: #333;
-    font-size: 18px;
-}
-
-.experience-item .date {
-    font-size: 14px;
-    color: #888;
-    margin: 5px 0 10px 0;
-}
-
-.experience-item p {
-    margin: 0;
-    color: #444;
+.hero-sub {
+    max-width: 600px;
+    margin: auto;
+    font-size: 15px;
     line-height: 1.6;
 }
 
 /* =========================
-   TEXT STYLING
+   SECTIONS
 ========================= */
 
-.section p {
-    line-height: 1.7;
-    color: #444;
-    margin-bottom: 15px;
+.section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 18px;
+    border: 2px solid #f3b6c6;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
 .section h2 {
+    text-align: center;
     color: #d63384;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.section strong {
+/* =========================
+   HIGHLIGHT CARDS
+========================= */
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.highlight-card {
+    padding: 20px;
+    border-radius: 14px;
+    border: 2px solid #f3b6c6;
+    background-color: #fff8fb;
+    transition: all 0.25s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    border-color: #d63384;
+}
+
+.highlight-card h3 {
+    margin-top: 0;
     color: #d63384;
 }
 
 /* =========================
-   FOOTER
+   EXPLORE CARDS
 ========================= */
 
-footer {
-    text-align: center;
-    padding: 20px;
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.explore-card {
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    padding: 25px;
+    border-radius: 16px;
+    border: 2px solid #f3b6c6;
+    transition: all 0.25s ease;
+    color: #333;
+}
+
+.explore-card:hover {
+    transform: translateY(-6px);
+    border-color: #d63384;
+    box-shadow: 0 12px 25px rgba(214, 51, 132, 0.15);
+}
+
+.explore-card h3 {
+    margin-top: 0;
     color: #d63384;
+}
+
+.explore-card p {
     font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =========================
+   CTA (BOTTOM TEXT)
+========================= */
+
+.cta {
+    text-align: center;
+    font-weight: 500;
+    color: #555;
 }
