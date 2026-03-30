@@ -166,3 +166,33 @@ nav a.active {
     font-weight: 500;
     color: #555;
 }
+
+/* =========================
+   EXPERIENCE ITEMS
+========================= */
+
+.experience-item {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f3b6c6;
+    transition: all 0.25s ease;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-item:hover {
+    transform: translateY(-4px);
+}
+
+.experience-item h3 {
+    margin: 0;
+    color: #333;
+}
+
+.date {
+    font-size: 14px;
+    color: #888;
+    margin: 5px 0 10px 0;
+}
