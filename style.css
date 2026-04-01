@@ -93,7 +93,7 @@ nav a.active {
 ========================= */
 
 .headshot {
-    width: 500px;   /* 120 × 1.5 = 180 */
+    width: 180px;
     max-width: 100%;
     height: auto;
     border-radius: 16px;
@@ -120,6 +120,25 @@ nav a.active {
     text-align: center;
     color: #d63384;
     margin-bottom: 20px;
+}
+
+/* =========================
+   ABOUT IMAGE (ABOVE SECTION)
+========================= */
+
+.about-image-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 10px 0;
+}
+
+.headshot-large {
+    width: 700px;   /* YOUR REQUESTED SIZE */
+    max-width: 90%; /* keeps it responsive */
+    height: auto;
+    border-radius: 18px;
+    border: 3px solid #f3b6c6;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 /* =========================
@@ -229,51 +248,15 @@ nav a.active {
 }
 
 /* =========================
-   ABOUT IMAGE LAYOUT
-========================= */
-
-.about-flex {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-}
-
-.headshot-side {
-    width: 700px;
-    height: auto;
-    border-radius: 16px;
-    border: 3px solid #f3b6c6;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-}
-
-/* =========================
    MOBILE RESPONSIVE
 ========================= */
 
 @media (max-width: 700px) {
-    .about-flex {
-        flex-direction: column;
-        text-align: center;
+    .headshot-large {
+        width: 90%;
     }
 
-    .headshot-side {
+    .headshot {
         width: 140px;
     }
-
-/* =========================
-   ABOUT IMAGE (ABOVE SECTION)
-========================= */
-
-.about-image-container {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0 10px 0;
-}
-
-.headshot-large {
-    width: 700px;   /* bigger */
-    height: auto;
-    border-radius: 18px;
-    border: 3px solid #f3b6c6;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
