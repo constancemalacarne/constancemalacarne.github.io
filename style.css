@@ -93,7 +93,7 @@ nav a.active {
 ========================= */
 
 .headshot {
-    width: 120px;          /* smaller */
+    width: 180px;   /* 120 × 1.5 = 180 */
     max-width: 100%;
     height: auto;
     border-radius: 16px;
