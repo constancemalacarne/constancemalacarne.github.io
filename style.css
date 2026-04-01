@@ -260,3 +260,21 @@ nav a.active {
         width: 140px;
     }
 }
+
+/* =========================
+   ABOUT IMAGE (ABOVE SECTION)
+========================= */
+
+.about-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.headshot-large {
+    width: 220px;   /* bigger */
+    height: auto;
+    border-radius: 18px;
+    border: 3px solid #f3b6c6;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
