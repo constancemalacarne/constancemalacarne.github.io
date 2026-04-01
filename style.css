@@ -93,7 +93,7 @@ nav a.active {
 ========================= */
 
 .headshot {
-    width: 300px;   /* 120 × 1.5 = 180 */
+    width: 500px;   /* 120 × 1.5 = 180 */
     max-width: 100%;
     height: auto;
     border-radius: 16px;
@@ -239,7 +239,7 @@ nav a.active {
 }
 
 .headshot-side {
-    width: 180px;
+    width: 700px;
     height: auto;
     border-radius: 16px;
     border: 3px solid #f3b6c6;
@@ -271,7 +271,7 @@ nav a.active {
 }
 
 .headshot-large {
-    width: 220px;   /* bigger */
+    width: 700px;   /* bigger */
     height: auto;
     border-radius: 18px;
     border: 3px solid #f3b6c6;
