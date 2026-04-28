@@ -291,9 +291,11 @@ nav a.active {
 
 .skills {
     margin-top: 8px;
-    color: #555;
-    font-size: 0.95em;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.5;
 }
+
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
